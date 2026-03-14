@@ -1,0 +1,19 @@
+tolerance 2.200000
+filetype xyz
+output bulk.xyz
+seed 1234567
+
+structure /home/users/Beom/work/1.Project/0.automization/packmol_runner/1.packmol_bulk_box_after_run/input_files/cl.xyz
+  number 16
+  inside box 0.000 0.000 0.000  30.000 30.000 30.000
+end structure
+
+structure /home/users/Beom/work/1.Project/0.automization/packmol_runner/1.packmol_bulk_box_after_run/input_files/na.xyz
+  number 16
+  inside box 0.000 0.000 0.000  30.000 30.000 30.000
+end structure
+
+structure /home/users/Beom/work/1.Project/0.automization/packmol_runner/1.packmol_bulk_box_after_run/input_files/water.xyz
+  number 851
+  inside box 0.000 0.000 0.000  30.000 30.000 30.000
+end structure

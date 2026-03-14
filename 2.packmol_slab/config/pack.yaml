@@ -1,0 +1,47 @@
+# Unified PACKMOL config — slab gap example
+# This example packs molecules into the gap region between two graphene layers.
+# The slab is included as a fixed structure in the PACKMOL input.
+
+mode: slab
+
+packmol:
+  cmd: "packmol"
+  tolerance: 2.0
+  seed: 7777777
+
+input:
+  slab_file: "input_slab/graphene_slab_gap_6.0nm.xyz"
+  include_slab_stanza: true
+
+# Optional:
+# If you later want CIF output, add the true slab cell lengths here.
+# cell:
+#   x: 12.350
+#   y: 12.833
+#   z: 60.000
+
+pack_region:
+  x_min: 0.618
+  x_max: 11.732
+  y_min: 0.356
+  y_max: 12.477
+  z_min: 2.0
+  z_max: 58.0
+
+species:
+  - name: cl
+    file: "input_files/cl.xyz"
+    count: 8
+
+  - name: na
+    file: "input_files/na.xyz"
+    count: 8
+
+  - name: water
+    file: "input_files/water.xyz"
+    count: 374
+
+output:
+  stem: "graphene_slab_water_pack"
+  xyz: true
+  cif: false

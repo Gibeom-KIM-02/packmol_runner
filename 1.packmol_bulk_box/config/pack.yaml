@@ -1,0 +1,46 @@
+# Unified PACKMOL config — bulk box example
+# This example packs molecules into an empty periodic box.
+# An empty_box.cif file is kept for compatibility / metadata purposes,
+# but it is not included as a fixed structure in the PACKMOL input.
+
+mode: bulk
+
+packmol:
+  cmd: "packmol"
+  tolerance: 2.2
+  seed: 1234567
+
+input:
+  box_file: "input_box/empty_box.cif"
+  include_slab_stanza: false
+
+cell:
+  x: 30.0
+  y: 30.0
+  z: 30.0
+
+pack_region:
+  x_min: 0.0
+  x_max: 30.0
+  y_min: 0.0
+  y_max: 30.0
+  z_min: 0.0
+  z_max: 30.0
+
+species:
+  - name: cl
+    file: "input_files/cl.xyz"
+    count: 16
+
+  - name: na
+    file: "input_files/na.xyz"
+    count: 16
+
+  - name: water
+    file: "input_files/water.xyz"
+    count: 851
+
+output:
+  stem: "bulk"
+  xyz: true
+  cif: true

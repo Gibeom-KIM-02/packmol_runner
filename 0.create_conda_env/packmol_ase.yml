@@ -1,0 +1,13 @@
+name: packmol_ase
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pyyaml
+  - ase
+  - packmol
+  - setuptools
+  - wheel
+
