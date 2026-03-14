@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Desktop/packmol_runner/0.create_conda_env"
+		},
+		{
+			"path": "../../../Desktop/packmol_runner/1.packmol_bulk_box"
+		},
+		{
+			"path": "../../../Desktop/packmol_runner/2.packmol_slab"
+		},
+		{
+			"path": "../../../Desktop/packmol_runner/after_run"
+		}
+	],
+	"settings": {}
+}
